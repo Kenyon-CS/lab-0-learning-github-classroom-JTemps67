@@ -1,3 +1,6 @@
+
+
+// Josh Temple
 #include <algorithm>
 #include <fstream>
 #include <iostream>
@@ -59,8 +62,9 @@ int main() {
          << endl;
   } else {
     cout << "Anagrams found for the word '" << word << "':" << endl;
+    int count = 1;
     for (const string &anagram : anagrams) {
-      cout << anagram << endl;
+      cout << count++ << ". " << anagram << endl;
     }
   }
 
